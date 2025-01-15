@@ -28,56 +28,44 @@ public class Comment {
     public void getCommentID(int commentID) {
         this.commentID = commentID;
     }
-
     public int getCommentID() {
         return commentID;
     }
-
     public void getCreatedBy(String createdBy) {
         this.createdBy = createdBy;
     }
-
     public String getCreatedBy() {
         return createdBy;
     }
-
     public void getContent(String content) {
         this.content = content;
     }
-
     public String getContent() {
         return content;
     }
-
     public void getCreatedOn(Date createdOn) {
         this.createdOn = createdOn;
     }
-
     public Date getCreatedOn() {
         return createdOn;
     }
-
     public void getUpdatedOn(Date updatedOn) {
         this.updatedOn = updatedOn;
     }
-
     public Date getUpdatedOn() {
         return updatedOn;
     }
-
     public void getVisible(boolean visible) {
         this.visible = visible;
     }
-
     public boolean getVisible() {
         return visible;
     }
-
     public void getAttachments(ArrayList<File> attachments) {
         this.attachments = attachments;
     }
-
     public void getHistory(ArrayList<Comment> history) {
         this.history = history;
     }
+
 }
