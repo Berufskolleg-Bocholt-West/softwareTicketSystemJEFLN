@@ -3,7 +3,6 @@ package de.bkbocholt.model;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Map;
@@ -16,12 +15,12 @@ public class User {
     private String eMail;
     private String password;
 
-    public User(Integer userID, String firstName, String lastName, String eMail, String password) {
+    public User(String firstName, String lastName, String eMail, String password) {
         try {
             this.userID = getLastUserID();
         } catch (IOException e) {
             e.printStackTrace();
-            this.userID = 0; // Fallback
+            this.userID = -1; // Fallback
         }
         this.firstName = firstName;
         this.lastName = lastName;
@@ -70,19 +69,15 @@ public class User {
         this.userID = userID;
     }
 
-    public String getUserSystemPath() {
+    // ID Ermittlung
+    public static Path getUserSystemPath() {
         String userHome = System.getProperty("user.home");
-        return Paths.get(userHome, "Documents").toString();
+        return Paths.get(userHome, "Documents");
     }
 
     public int getLastUserID() throws IOException {
-        String documentsPath = getUserSystemPath();
+        String documentsPath = getUserSystemPath().toString();
         Path filePath = Paths.get(documentsPath, "config.json");
-
-        if (!Files.exists(filePath)) {
-            System.out.println("Konfigurationsdatei nicht gefunden: " + filePath);
-            return 0; // Fallback
-        }
 
         // JSON-Datei parsen
         ObjectMapper objectMapper = new ObjectMapper();
@@ -90,16 +85,22 @@ public class User {
             // Datei in ein Map-Objekt einlesen
             Map<String, Object> jsonMap = objectMapper.readValue(new File(filePath.toString()), Map.class);
 
-            // Nach dem Schlüssel "lastUserIdCreated" suchen
+            // Nach dem "lastUserIdCreated" suchen
             if (jsonMap.containsKey("lastUserIdCreated")) {
-                return (int) jsonMap.get("lastUserIdCreated");
+                int lastUserId = (int) jsonMap.get("lastUserIdCreated");
+                int newUserId = lastUserId + 1;
+
+                // Aktualisierte Zahl zurück in die JSON-Datei schreiben
+                jsonMap.put("lastUserIdCreated", newUserId);
+                objectMapper.writeValue(new File(filePath.toString()), jsonMap);
+
+                return newUserId;
             } else {
-                System.out.println("Key 'lastUserIdCreated' nicht gefunden.");
-                return 0; //Fallback
+                throw new IOException("Variabel 'lastUserIdCreated' nicht in JSON gefunden.");
             }
         } catch (IOException e) {
-            System.out.println("Fehler beim Lesen der JSON-Datei: " + e.getMessage());
-            return 0; //Fallback
+            System.out.println("Fehler beim Lesen oder Schreiben der JSON-Datei: " + e.getMessage());
+            return -1; // Fallback
         }
     }
 }
