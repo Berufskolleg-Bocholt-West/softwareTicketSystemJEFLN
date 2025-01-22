@@ -11,6 +11,7 @@
 
 package de.bkbocholt.model;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
 import javafx.application.Application;
@@ -34,8 +35,11 @@ public class Main extends Application{
     }
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         launch(args);
+        //ticketTest();
+        //Ticket.readTicketData("/home/ewan/ticket.json", "string", "title");
+        Ticket.getTicketData("/home/ticket.json");
     }
 
     public static void ticketTest(){

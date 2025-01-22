@@ -21,7 +21,13 @@ import com.fasterxml.jackson.databind.DatabindException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.File;
 import java.io.IOException;
+
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import com.fasterxml.jackson.databind.util.JSONPObject;
 import javafx.fxml.FXML;
+
+import org.json.JSONObject;
 
 public class Ticket {
     @FXML
@@ -197,12 +203,62 @@ public class Ticket {
         this.state = newState;
     }
 
+
     public void saveTicket(String filePath) {
         ObjectMapper oM = new ObjectMapper();
         try {
             oM.writeValue(new File(filePath), this);
         } catch (IOException e) {
             System.out.println("Error saving ticket message:" + e.getMessage());
+        }
+    }
+
+    public static JSONObject getTicketData(String filePath) {
+        File file = new File(filePath);
+        try{
+            String ticketContent = new String(Files.readAllBytes(Paths.get(file.toURI())), "UTF-8");
+            JSONObject json = new JSONObject(ticketContent); //erstellt ein json objekt wo das ticket drin steht
+            return json; // returned alles was im ticket steht
+        } catch (IOException e) {
+            System.out.println("Error reading file:" + e.getMessage());
+            return null;
+        }
+    }
+
+    public static String getJsonString(String fileName, String varName) throws IOException {
+        try {
+            File file = new File(fileName);
+            String ticketContent = new String(Files.readAllBytes(Paths.get(file.toURI())), "UTF-8");
+            JSONObject json = new JSONObject(ticketContent);
+            if (json.has(varName)) {
+                return json.getString(varName); // sucht nach einer bestimmten variable die einen string beinhaltet und gibt den drinstehenden wert zurück
+            } else {
+                System.out.println("Error in reading data from file: " + fileName);
+                return null;
+            }
+        }
+        catch (IOException e) {
+            System.out.println("Error reading file:" + e.getMessage());
+            return null;
+        }
+    }
+
+    public static int getJsonInt(String fileName, String varName) throws IOException {
+        try{
+            File file = new File(fileName);
+            String ticketContent = new String(Files.readAllBytes(Paths.get(file.toURI())), "UTF-8");
+            JSONObject json = new JSONObject(ticketContent);
+            if (json.has(varName)) {
+                return json.getInt(varName);
+            }
+            else {
+                System.out.println("Error in reading data from file: " + fileName);
+                return 0;
+            }
+        }
+        catch (IOException e) {
+            System.out.println("Error reading file:" + e.getMessage());
+            return 0;
         }
     }
 }
