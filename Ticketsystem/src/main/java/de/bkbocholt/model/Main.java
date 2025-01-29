@@ -12,6 +12,8 @@ public class Main extends Application {
             core.checkForConfig();
             User newUser1 = new User("Luis", "Kessler", "ichstinke@nachkacke.com", "Dicks123");
             User newUser2 = new User("Kai", "Maier", "krasse@kai.com", "sAfE123");
+            User newAdmin = new Admin("Janosch", "Kastalski","test", "123", 1);
+            User.saveUserToJSON(newAdmin);
             User.saveUserToJSON(newUser1);
             User.saveUserToJSON(newUser2);
         } catch (IOException e) {

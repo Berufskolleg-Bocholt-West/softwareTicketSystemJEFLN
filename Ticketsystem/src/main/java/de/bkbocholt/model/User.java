@@ -2,6 +2,7 @@ package de.bkbocholt.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import de.bkbocholt.model.core.core;
 
 import java.io.File;
 import java.io.IOException;
@@ -75,14 +76,9 @@ public class User {
         }
     }
 
-    public static Path getUserSystemPath() {
-        String userHome = System.getProperty("user.home");
-        return Paths.get(userHome, "Documents");
-    }
-
     @JsonIgnore
     public int getLastUserID() throws IOException {
-        String documentsPath = getUserSystemPath().toString();
+        String documentsPath = core.getUserSystemPath().toString();
         Path directoryPath = Paths.get(documentsPath, "TicketProgramm");
         Path filePath = directoryPath.resolve("config.conf");
 
@@ -122,7 +118,7 @@ public class User {
     }
 
     public static void saveUserToJSON(User user) throws IOException {
-        String ticketProgramPath = getUserSystemPath().toString();
+        String ticketProgramPath = core.getUserSystemPath().toString();
         Path userDirectory = Paths.get(ticketProgramPath, "TicketProgramm","User");
 
         File directory = new File(userDirectory.toString());

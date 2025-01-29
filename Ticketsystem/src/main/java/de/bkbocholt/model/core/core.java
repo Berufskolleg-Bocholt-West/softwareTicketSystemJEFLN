@@ -12,7 +12,7 @@ import java.util.Map;
 
 public class core {
     public static void generateDefaultConfig() throws IOException {
-        String documentsPath = User.getUserSystemPath().toString();
+        String documentsPath = getUserSystemPath().toString();
 
         Path folderPath = Paths.get(documentsPath, "TicketProgramm");
         Path configFilePath = folderPath.resolve("config.conf");
@@ -35,11 +35,16 @@ public class core {
     }
 
     public static void checkForConfig() throws IOException {
-        String documentsPath = User.getUserSystemPath().toString();
+        String documentsPath = getUserSystemPath().toString();
         Path configFilePath = Paths.get(documentsPath, "TicketProgramm", "config.json");
 
         if (!Files.exists(configFilePath)) {
             generateDefaultConfig();
         }
+    }
+
+    public static Path getUserSystemPath() {
+        String userHome = System.getProperty("user.home");
+        return Paths.get(userHome, "Documents");
     }
 }
