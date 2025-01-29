@@ -1,5 +1,6 @@
-package de.bkbocholt.model;
+package de.bkbocholt.model.core;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import de.bkbocholt.model.User;
 
 import java.io.File;
 import java.io.IOException;
@@ -29,7 +30,7 @@ public class core {
         try {
             objectMapper.writeValue(new File(configFilePath.toString()), defaultConfig);
         } catch (IOException e) {
-            throw e;
+            throw new IOException(e);
         }
     }
 
