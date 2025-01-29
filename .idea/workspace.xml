@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8b04d6a-3695-49cd-9926-25a2d2afab3e" name="Changes" comment="test">
-      <change afterPath="$PROJECT_DIR$/Ticketsystem/src/main/java/de/bkbocholt/model/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ticketsystem/src/main/java/de/bkbocholt/model/core.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ticketsystem/src/test/java/de/bkbocholt/model/UserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ticketsystem/src/main/java/de/bkbocholt/model/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ticketsystem/src/main/java/de/bkbocholt/model/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ticketsystem/src/main/java/de/bkbocholt/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ticketsystem/src/main/java/de/bkbocholt/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ticketsystem/src/main/java/de/bkbocholt/model/core.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ticketsystem/src/main/java/de/bkbocholt/model/core/core.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ticketsystem/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ticketsystem/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,12 +54,12 @@
     &quot;assignee&quot;: &quot;Toadiiiii&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Berufskolleg-Bocholt-West/softwareTicketSystemJEFLN.git",
-    "accountId": "07365d42-cba9-4bfd-9a9c-3b0566e6df57"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Berufskolleg-Bocholt-West/softwareTicketSystemJEFLN.git&quot;,
+    &quot;accountId&quot;: &quot;07365d42-cba9-4bfd-9a9c-3b0566e6df57&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -110,7 +105,7 @@
       <module name="Ticketsystem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="de.bkbocholt.model.*" />
+          <option name="PATTERN" value="de.bkbocholt.model.core.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,7 +117,7 @@
       <module name="Ticketsystem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="de.bkbocholt.model.*" />
+          <option name="PATTERN" value="de.bkbocholt.model.core.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -156,8 +151,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.145" />
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.145" />
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.153" />
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.153" />
       </set>
     </attachedChunks>
   </component>
@@ -176,6 +171,7 @@
       <workItem from="1737536793831" duration="5190000" />
       <workItem from="1737544043256" duration="176000" />
       <workItem from="1737544442927" duration="359000" />
+      <workItem from="1738148188915" duration="889000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -185,7 +181,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737361548048</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="test">
+      <option name="closed" value="true" />
+      <created>1738148216223</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1738148216223</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
