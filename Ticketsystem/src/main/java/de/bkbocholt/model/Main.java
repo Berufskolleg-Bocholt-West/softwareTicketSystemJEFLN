@@ -9,10 +9,13 @@ public class Main extends Application {
     public static void main(String[] args){
         try {
             core.checkForConfig();
-            User Luis = new User("Luis", "Kessler", "ichstinke@nachkacke.com", "Dicks123");
-            System.out.println(Luis.getUserID());
+            User newUser1 = new User("Luis", "Kessler", "ichstinke@nachkacke.com", "Dicks123");
+            User newUser2 = new User("Kai", "Maier", "krasse@kai.com", "sAfE123");
+            User.saveUserToJSON(newUser1);
+            User.saveUserToJSON(newUser2);
         } catch (IOException e) {
             throw new RuntimeException(e);
+            //Luis gpt experte
         }
     }
     @Override
