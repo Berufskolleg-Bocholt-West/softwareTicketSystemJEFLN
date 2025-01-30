@@ -25,7 +25,7 @@ public class Main extends Application{
     @Override
     public void start(Stage primaryStage) throws Exception {
         // Lade die FXML-Datei
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/Ticket.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/loginpage.fxml"));
         Parent root = loader.load();
 
         // Szene erstellen und anzeigen
@@ -37,62 +37,12 @@ public class Main extends Application{
 
 
     public static void main(String[] args) throws IOException {
-        //launch(args);
-        //ticketTest();
+        launch(args);
         //Ticket.readTicketData("/home/ewan/ticket.json", "string", "title");
         //Ticket.getTicketData("/home/ticket.json");
-        testRun();
+        //testRun();
     }
 
-    public static void ticketTest(){
-        // Dummy-Daten erstellen
-        ArrayList<String> assignedUsers = new ArrayList<>();
-        assignedUsers.add("User1");
-        assignedUsers.add("User2");
-
-        ArrayList<String> comments = new ArrayList<>();
-        comments.add("test comment");
-        comments.add("Second test comment");
-
-        ArrayList<String> attachments = new ArrayList<>();
-        attachments.add("File1.pdf");
-        attachments.add("Image.png");
-
-        ArrayList<String> history = new ArrayList<>();
-        history.add("Ticket created");
-        history.add("Priority changed");
-
-        // Ticket erstellen
-        Ticket ticket = new Ticket(
-                1,
-                "Test-Ticket",
-                "das ist ein Test-Ticket",
-                "Ewan Olbrich",
-                "Max Mustermann",
-                3, // Priority
-                1, // State
-                assignedUsers,
-                comments,
-                attachments,
-                history
-        );
-
-        // Ticket ausgeben
-        System.out.println(ticket);
-        ticket.saveTicket("/home/ewan/ticket.json");
-        // Methoden testen
-/*
-        ticket.changePriority(5);
-        ticket.changeState(2);
-        ticket.changeEditor("Lisa Müller");
-
-        System.out.println("\nNach Änderungen:");
-        System.out.println(ticket);
-
-        // Zusammenfassung anzeigen
-        System.out.println("\nZusammenfassung:");
-        System.out.println(ticket.getSummary());*/
-    }
 
     public static void testRun(){
         Scanner scanner = new Scanner(System.in);

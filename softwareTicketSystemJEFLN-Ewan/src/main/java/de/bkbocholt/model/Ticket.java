@@ -34,8 +34,6 @@ import org.json.JSONObject;
 public class Ticket {
     @FXML
     private void initialize() {
-        // Hier kann Initialisierungslogik hinzugefügt werden
-        System.out.println("Ticket-Controller wurde geladen.");
     }
 
     private int ticketID;
@@ -51,8 +49,7 @@ public class Ticket {
     private ArrayList<String> history;
 
     public Ticket() {
-        // Optional: Initialisierungscode
-        System.out.println("Ticket-Controller wurde instanziiert.");
+
     }
 
 
@@ -202,9 +199,9 @@ public class Ticket {
 
         System.out.println("Ticket created:");
         System.out.println(this);
-
-        saveTicket("/home/ewan/ticket.json");
-        System.out.println("Ticket created and saved to /home/ewan/ticket.json");
+        String filePath = "/home/ewan/"+ this.title+ ".json";
+        saveTicket(filePath);
+        System.out.println("Ticket created and saved to /home/ewan/"+ this.title+ ".json");
     }
 
 }
