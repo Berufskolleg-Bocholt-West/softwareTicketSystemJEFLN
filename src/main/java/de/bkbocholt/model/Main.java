@@ -38,19 +38,6 @@ public class Main extends Application{
 
     public static void main(String[] args) throws IOException {
         launch(args);
-        //Ticket.readTicketData("/home/ewan/ticket.json", "string", "title");
-        //Ticket.getTicketData("/home/ticket.json");
-        //testRun();
     }
-
-
-    public static void testRun(){
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Wollen sie ein Ticket erstellen? (y/n)");
-        String input = scanner.nextLine();
-        if(input.equals("y")){
-            System.out.println("Ticket erstellen...");
-            Ticket ticket = new Ticket();
-            ticket.createTicket();
-        }
-}}
+    
+}
