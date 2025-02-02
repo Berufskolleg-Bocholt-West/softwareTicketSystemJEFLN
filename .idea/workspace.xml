@@ -1,8 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f8b04d6a-3695-49cd-9926-25a2d2afab3e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Ticketsystem/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ticketsystem/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ticketsystem/src/main/java/de/bkbocholt/model/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ticketsystem/src/main/java/de/bkbocholt/model/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ticketsystem/src/main/java/de/bkbocholt/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ticketsystem/src/main/java/de/bkbocholt/model/core/core.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/core/core.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ticketsystem/src/main/java/de/bkbocholt/ticketsystem/NaR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/ticketsystem/NaR.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ticketsystem/src/main/java/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ticketsystem/src/test/java/de/bkbocholt/model/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/bkbocholt/model/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ticketsystem/target/classes/de/bkbocholt/model/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ticketsystem/target/classes/de/bkbocholt/model/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ticketsystem/target/classes/de/bkbocholt/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ticketsystem/target/classes/de/bkbocholt/model/core.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/core.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ticketsystem/target/classes/de/bkbocholt/ticketsystem/NaR.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bkbocholt/ticketsystem/NaR.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ticketsystem/target/classes/de/bkbocholt/ticketsystem/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/de/bkbocholt/ticketsystem/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ticketsystem/target/classes/module-info.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ticketsystem/target/test-classes/de/bkbocholt/model/UserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/de/bkbocholt/model/UserTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,16 +58,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Janosch&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "Merging main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Intelj" />
@@ -64,8 +87,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.145" />
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.145" />
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.218" />
       </set>
     </attachedChunks>
   </component>
@@ -78,6 +101,7 @@
       <option name="presentableId" value="Default" />
       <updated>1734336439308</updated>
       <workItem from="1734336440590" duration="122000" />
+      <workItem from="1738505641676" duration="2238000" />
     </task>
     <servers />
   </component>
