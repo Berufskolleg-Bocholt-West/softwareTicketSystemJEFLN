@@ -1,0 +1,9 @@
+de/bkbocholt/model/core/core.class
+de/bkbocholt/ticketsystem/NaR.class
+module-info.class
+de/bkbocholt/model/Login.class
+de/bkbocholt/model/Ticket.class
+de/bkbocholt/model/Admin.class
+de/bkbocholt/model/Comment.class
+de/bkbocholt/model/Main.class
+de/bkbocholt/model/User.class
