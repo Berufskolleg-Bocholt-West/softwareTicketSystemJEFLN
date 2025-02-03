@@ -24,7 +24,7 @@
                 <Label text="Password" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
                 <PasswordField fx:id="password" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
                 <Button text="Login" styleClass="login-button"
-                        GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.halignment="CENTER" onAction="#handleLogin"/>
+                        GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.halignment="CENTER" onAction="#handleLogin" fx:id="loginButton"/>
             </GridPane>
         </VBox>
     </StackPane>

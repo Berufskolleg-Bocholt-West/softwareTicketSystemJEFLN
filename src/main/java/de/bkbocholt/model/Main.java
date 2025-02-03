@@ -12,6 +12,9 @@
 package de.bkbocholt.model;
 
 import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.Date;
 import javafx.application.Application;
@@ -21,11 +24,15 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import java.util.Scanner;
 
+//eigene klassen/methoden
+import static de.bkbocholt.model.core.core.*;
+
+
 public class Main extends Application{
     @Override
     public void start(Stage primaryStage) throws Exception {
         // Lade die FXML-Datei
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/loginpage.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/mainpage.fxml"));
         Parent root = loader.load();
 
         // Szene erstellen und anzeigen
@@ -36,8 +43,8 @@ public class Main extends Application{
     }
 
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, NoSuchAlgorithmException {
+        checkForAllDirectory();
         launch(args);
     }
-    
 }

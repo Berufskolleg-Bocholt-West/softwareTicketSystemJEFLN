@@ -10,6 +10,8 @@ import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
 
+import static de.bkbocholt.model.core.core.isDirectoryMissing;
+
 public class User {
     private Integer userID;
     private String firstName;
@@ -69,11 +71,7 @@ public class User {
     public void setUserID(Integer userID) {
         this.userID = userID;
     }
-    public static void isDirectoryMissing(File directory) {
-        if (!directory.exists()) {
-            directory.mkdirs();
-        }
-    }
+
 
     public static Path getUserSystemPath() {
         String userHome = System.getProperty("user.home");
@@ -128,7 +126,7 @@ public class User {
         File directory = new File(userDirectory.toString());
         isDirectoryMissing(directory);
 
-        String fileName = user.getUserID() + "_" + user.getFirstName() + user.getLastName() + ".json";
+        String fileName = user.geteMail() + ".json"; // nur zu email gaändert damit es leichter ist
         Path filePath = Paths.get(userDirectory.toString(), fileName);
 
         ObjectMapper objectMapper = new ObjectMapper();
