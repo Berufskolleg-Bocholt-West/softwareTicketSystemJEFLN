@@ -12,14 +12,17 @@
 package de.bkbocholt.model;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Date;
+import java.security.NoSuchAlgorithmException;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import java.util.Scanner;
+
+//eigene klassen/methoden
+import static de.bkbocholt.model.coresys.core.*;
+
 
 public class Main extends Application{
     @Override
@@ -36,21 +39,8 @@ public class Main extends Application{
     }
 
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, NoSuchAlgorithmException {
+        checkForAllDirectory();
         launch(args);
-        //Ticket.readTicketData("/home/ewan/ticket.json", "string", "title");
-        //Ticket.getTicketData("/home/ticket.json");
-        //testRun();
     }
-
-
-    public static void testRun(){
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Wollen sie ein Ticket erstellen? (y/n)");
-        String input = scanner.nextLine();
-        if(input.equals("y")){
-            System.out.println("Ticket erstellen...");
-            Ticket ticket = new Ticket();
-            ticket.createTicket();
-        }
-}}
+}
