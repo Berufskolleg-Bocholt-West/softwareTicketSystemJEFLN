@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Pos?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/11.0.14-internal"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="de.bkbocholt.model.Login"
+            stylesheets="@../styles/loginpage.css">
+
+    <StackPane>
+        <VBox alignment="CENTER" spacing="15">
+            <Label text="Login" styleClass="title-label" />
+            <GridPane>
+                <padding>
+                    <Insets top="10" right="20" bottom="10" left="20"/>
+                </padding>
+                <Label text="Email" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+                <TextField fx:id="email" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+                <Label text="Password" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+                <PasswordField fx:id="password" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                <Button text="Login" styleClass="login-button"
+                        GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.halignment="CENTER" onAction="#handleLogin"/>
+            </GridPane>
+        </VBox>
+    </StackPane>
+</AnchorPane>
+
