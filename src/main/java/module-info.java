@@ -16,4 +16,6 @@ module de.bkbocholt.ticketsystem {
 
 //    exports de.bkbocholt.model;
     exports de.bkbocholt.model to javafx.graphics, com.fasterxml.jackson.databind;
+    exports de.bkbocholt.model.guihandler to com.fasterxml.jackson.databind, javafx.graphics;
+    opens de.bkbocholt.model.guihandler to javafx.fxml;
 }

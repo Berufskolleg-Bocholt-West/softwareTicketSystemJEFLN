@@ -1,5 +1,6 @@
-package de.bkbocholt.model;
+package de.bkbocholt.model.guihandler;
 
+import de.bkbocholt.model.Ticket;
 import de.bkbocholt.model.coresys.core;
 import javafx.application.Application;
 import javafx.fxml.FXML;
