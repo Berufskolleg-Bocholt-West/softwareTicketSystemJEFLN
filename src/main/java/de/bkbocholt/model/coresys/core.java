@@ -106,7 +106,7 @@ public class core {
             directory.mkdirs();
         }
     }
-    public static void checkForAllDirectory(){
+    public static void checkForAllDirectory() throws IOException {
         String documentsPath = User.getUserSystemPath().toString();
         Path ticketProgramPath = Paths.get(documentsPath, "TicketProgramm");
         Path userDirectory = Paths.get(ticketProgramPath.toString(), "User");
@@ -114,7 +114,6 @@ public class core {
         Path commentDirectory = Paths.get(ticketProgramPath.toString(), "Comment");
         Path attachmentDirectory = Paths.get(ticketProgramPath.toString(), "Attachment");
         Path historyDirectory = Paths.get(ticketProgramPath.toString(), "History");
-        Path configFilePath = ticketProgramPath.resolve("config.conf");
 
         isDirectoryMissing(ticketProgramPath.toFile());
         isDirectoryMissing(userDirectory.toFile());
@@ -122,17 +121,28 @@ public class core {
         isDirectoryMissing(commentDirectory.toFile());
         isDirectoryMissing(attachmentDirectory.toFile());
         isDirectoryMissing(historyDirectory.toFile());
-        isDirectoryMissing(configFilePath.toFile());
+        checkForConfig();
     }
     public static String getDirectory(String usage) {
         String documentsPath = User.getUserSystemPath().toString();
         Path ticketProgramPath = Paths.get(documentsPath, "TicketProgramm");
-        if(Objects.equals(usage, "Ticket")){
-            Path ticketDirectory = Paths.get(ticketProgramPath.toString(), "Ticket");
-            System.out.println(ticketDirectory.toString());
-            return ticketDirectory.toString();
+        switch (usage){
+            case "Ticket":
+                Path ticketDirectory = Paths.get(ticketProgramPath.toString(), "Ticket");
+                return ticketDirectory.toString();
+        case "User":
+            Path userDirectory = Paths.get(ticketProgramPath.toString(), "User");
+            return userDirectory.toString();
+        case "comment":
+            Path commentDirectory = Paths.get(ticketProgramPath.toString(), "Comment");
+            return commentDirectory.toString();
+        case "attachment":
+            Path attachmentDirectory = Paths.get(ticketProgramPath.toString(), "Attachment");
+            return attachmentDirectory.toString();
+        case "history":
+            Path historyDirectory = Paths.get(ticketProgramPath.toString(), "History");
+            return historyDirectory.toString();
+        }
+    return null;
     }
-        return null;
-}
-
 }
