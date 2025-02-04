@@ -5,25 +5,56 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8b04d6a-3695-49cd-9926-25a2d2afab3e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/coresys/core.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/guihandler/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/guihandler/mainpage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/guihandler/register.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/de/bkbocholt/ticketsystem/hello-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/styles/registration.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/registrationPage.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/tets.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/coresys/core.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/guihandler/Login.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/guihandler/mainpage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/guihandler/register.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/de/bkbocholt/ticketsystem/hello-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/styles/registration.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/view/registrationPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/Comment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/Ticket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/core/core.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/core/core.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/mainpage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/mainpage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/bkbocholt/ticketsystem/NaR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/ticketsystem/NaR.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/de/bkbocholt/ticketsystem/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/styles/loginpage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/styles/loginpage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Ticket.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Ticket.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/view/loginpage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/loginpage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/mainpage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/mainpage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/bkbocholt/model/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/bkbocholt/model/UserTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/Login.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/Ticket.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/Ticket.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/core.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/mainpage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/mainpage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/styles/loginpage.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/styles/loginpage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/Ticket.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/Ticket.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/view/loginpage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/loginpage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/mainpage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/mainpage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-de.bkbocholt.model.UserTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-de.bkbocholt.model.UserTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/de.bkbocholt.model.UserTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/de.bkbocholt.model.UserTest.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +114,7 @@
     "Application.mainpage.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Merging main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/ewan/src/softwareTicketSystemJEFLN-Ewan/src/main/java/module-info.java",
     "node.js.detected.package.eslint": "true",

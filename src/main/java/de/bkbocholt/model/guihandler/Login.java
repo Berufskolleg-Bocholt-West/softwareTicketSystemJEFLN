@@ -1,4 +1,4 @@
-package de.bkbocholt.model;
+package de.bkbocholt.model.guihandler;
 
 import de.bkbocholt.model.coresys.core;
 import javafx.fxml.FXML;

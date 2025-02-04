@@ -10,7 +10,7 @@ import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
 
-import static de.bkbocholt.model.core.core.isDirectoryMissing;
+import static de.bkbocholt.model.coresys.core.isDirectoryMissing;
 
 public class User {
     private Integer userID;

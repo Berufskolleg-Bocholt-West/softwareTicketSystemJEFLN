@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.shape.*?>
 
-<AnchorPane fx:id="rootPane" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.bkbocholt.model.mainpage">
+<AnchorPane fx:id="rootPane" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.bkbocholt.model.guihandler.mainpage">
     <children>
         <!-- drei striche menu  -->
         <VBox fx:id="AufmachenButton" layoutX="20.0" layoutY="20.0" spacing="5.0" style="-fx-cursor: hand;">
