@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<!--
+  ~ Copyright (c) 2024. Ewan Olbrich
+  ~ All rights reserved. This code is provided "as is," without warranty of any kind, express or implied,
+  ~ including but not limited to the warranties of merchantability, fitness for a particular purpose,
+  ~ or non-infringement. You may use, modify, and distribute this code, provided that the above copyright
+  ~ notice and this permission notice appear in all copies or substantial portions of the code.
+  ~
+  ~ For any inquiries, please contact: ewanolbrich@gmail.com
+  ~
+  -->
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="de.bkbocholt.model.Ticket"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <BorderPane AnchorPane.topAnchor="0.0"
+                AnchorPane.leftAnchor="0.0"
+                AnchorPane.rightAnchor="0.0"
+                AnchorPane.bottomAnchor="0.0">
+        <top>
+            <MenuBar>
+                <Menu text="File">
+                    <MenuItem text="New Ticket" />
+                    <MenuItem text="Export Data"/>
+                    <SeparatorMenuItem/>
+                    <MenuItem text="Exit"/>
+                </Menu>
+                <Menu text="Edit">
+                    <MenuItem text="Settings"/>
+                </Menu>
+                <Menu text="Help">
+                    <MenuItem text="About"/>
+                </Menu>
+            </MenuBar>
+        </top>
+
+        <left>
+            <VBox spacing="10" style="-fx-background-color: #f4f4f4;" prefWidth="200">
+                <padding>
+                    <Insets top="10" right="10" bottom="10" left="10"/>
+                </padding>
+                <Label text="Filters" style="-fx-font-weight: bold;"/>
+                <ComboBox fx:id="statusFilter" promptText="Status" maxWidth="Infinity"/>
+                <ComboBox fx:id="priorityFilter" promptText="Priority" maxWidth="Infinity"/>
+                <ComboBox fx:id="assigneeFilter" promptText="Assignee" maxWidth="Infinity"/>
+                <Button text="Apply Filters" maxWidth="Infinity"/>
+                <Button text="Clear Filters" maxWidth="Infinity"/>
+            </VBox>
+        </left>
+
+        <center>
+            <VBox spacing="10">
+                <padding>
+                    <Insets top="10" right="10" bottom="10" left="10"/>
+                </padding>
+                <HBox spacing="10" alignment="CENTER_LEFT">
+                    <TextField promptText="Search tickets..." HBox.hgrow="ALWAYS"/>
+                    <Button text="+ New Ticket" style="-fx-background-color: #4CAF50; -fx-text-fill: white;"/>
+                </HBox>
+
+                <TableView fx:id="ticketTable" VBox.vgrow="ALWAYS">
+                    <columns>
+                        <TableColumn text="ID" fx:id="idColumn"/>
+                        <TableColumn text="Title" fx:id="titleColumn"/>
+                        <TableColumn text="Status" fx:id="statusColumn"/>
+                        <TableColumn text="Priority" fx:id="priorityColumn"/>
+                        <TableColumn text="Assignee" fx:id="assigneeColumn"/>
+                        <TableColumn text="Created Date" fx:id="createdDateColumn"/>
+                        <TableColumn text="Due Date" fx:id="dueDateColumn"/>
+                    </columns>
+                </TableView>
+            </VBox>
+        </center>
+
+        <right>
+            <VBox spacing="10" style="-fx-background-color: #f4f4f4;" prefWidth="300">
+                <padding>
+                    <Insets top="10" right="10" bottom="10" left="10"/>
+                </padding>
+                <Label text="Ticket Details" style="-fx-font-weight: bold;"/>
+                <GridPane vgap="5" hgap="5">
+                    <Label text="Title:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+                    <TextField fx:id="titleField" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+                    <Label text="Status:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+                    <ComboBox fx:id="statusCombo" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+                    <Label text="Priority:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+                    <ComboBox fx:id="priorityCombo" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+                    <Label text="Assignee:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+                    <ComboBox fx:id="assigneeCombo" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+                    <Label text="Due Date:" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+                    <DatePicker fx:id="dueDatePicker" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+                </GridPane>
+
+                <Label text="Description"/>
+                <TextArea fx:id="descriptionArea" prefRowCount="4" wrapText="true" VBox.vgrow="ALWAYS"/>
+
+                <Label text="Comments"/>
+                <ListView fx:id="commentsList" prefHeight="200" VBox.vgrow="ALWAYS"/>
+
+                <HBox spacing="10">
+                    <TextField promptText="Add a comment..." HBox.hgrow="ALWAYS"/>
+                    <Button text="Send"/>
+                </HBox>
+
+                <HBox spacing="10" alignment="CENTER_RIGHT">
+                    <Button text="Save Changes" style="-fx-background-color: #4CAF50; -fx-text-fill: white;"/>
+                    <Button text="Close Ticket" style="-fx-background-color: #f44336; -fx-text-fill: white;"/>
+                </HBox>
+            </VBox>
+        </right>
+    </BorderPane>
+</AnchorPane>
