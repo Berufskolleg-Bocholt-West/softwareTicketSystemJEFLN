@@ -7,7 +7,7 @@ module de.bkbocholt.ticketsystem {
     requires com.fasterxml.jackson.annotation;
 
     requires json;
-
+    requires java.desktop;
 
 
     opens de.bkbocholt.model to javafx.fxml;

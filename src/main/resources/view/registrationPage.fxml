@@ -3,12 +3,12 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../styles/registration.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.bkbocholt.model.guihandler.Login">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../styles/registration.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.bkbocholt.model.guihandler.register">
 
     <StackPane />
      <VBox alignment="CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="400.0" prefWidth="600.0" spacing="20">
          <!-- Title with improved styling -->
-         <Label styleClass="title-label" text="Login" />
+         <Label styleClass="title-label" text="Register" />
 
          <!-- Login form with GridPane -->
          <GridPane alignment="CENTER" hgap="15" vgap="10">
@@ -21,8 +21,10 @@
              <Label styleClass="form-label" text="Re-enter Password" GridPane.columnIndex="0" GridPane.rowIndex="2" />
              <PasswordField fx:id="reEnter" promptText="Re-enter your password" styleClass="form-field" GridPane.columnIndex="1" GridPane.rowIndex="2" />
 
-             <!-- Register button with modern look -->
-             <Button fx:id="btnRegister" onAction="#handleLogin" styleClass="login-button" text="Registrieren" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+             <HBox alignment="CENTER" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                 <Button fx:id="btnLogin" styleClass="login-button" text=" Login " onAction="#loginOnClick"/>
+                 <Button fx:id="btnRegister" text="Register" styleClass="login-button" onAction="#handleRegister"/>
+             </HBox>
          <columnConstraints>
             <ColumnConstraints />
             <ColumnConstraints />

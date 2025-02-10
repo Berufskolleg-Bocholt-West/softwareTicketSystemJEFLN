@@ -20,18 +20,17 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-//eigene klassen/methoden
 import static de.bkbocholt.model.coresys.core.*;
 
 
 public class Main extends Application{
     @Override
     public void start(Stage primaryStage) throws Exception {
-        // Lade die FXML-Datei
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/loginpage.fxml"));
+        // loads the fxml file
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/mainpage.fxml"));
         Parent root = loader.load();
 
-        // Szene erstellen und anzeigen
+        // create a new scene and open it
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);
         primaryStage.setTitle("Ticket App");
@@ -40,7 +39,7 @@ public class Main extends Application{
 
 
     public static void main(String[] args) throws IOException, NoSuchAlgorithmException {
-        checkForAllDirectory();
+        checkForAllDirectory(); // loading all folders in the system
         launch(args);
     }
 }

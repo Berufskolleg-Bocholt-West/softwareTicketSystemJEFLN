@@ -5,56 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8b04d6a-3695-49cd-9926-25a2d2afab3e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/coresys/core.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/guihandler/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/guihandler/mainpage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/guihandler/register.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/de/bkbocholt/ticketsystem/hello-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/styles/registration.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/registrationPage.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/tets.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/coresys/core.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/guihandler/Login.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/guihandler/mainpage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/guihandler/register.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/de/bkbocholt/ticketsystem/hello-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/styles/registration.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/view/registrationPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/Login.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/Ticket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/mainpage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/mainpage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/bkbocholt/ticketsystem/NaR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/ticketsystem/NaR.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/core/core.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/guihandler/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/guihandler/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/guihandler/mainpage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/guihandler/mainpage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/guihandler/register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/guihandler/register.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/mainpage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/bkbocholt/ticketsystem/NaR.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/styles/loginpage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/styles/loginpage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Ticket.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Ticket.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/de/bkbocholt/ticketsystem/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/styles/loginpage.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/styles/registration.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/styles/registration.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Ticket.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/view/loginpage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/loginpage.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/view/mainpage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/mainpage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/de/bkbocholt/model/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/bkbocholt/model/UserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/registrationPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/registrationPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/tets.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/Login.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/Ticket.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/Ticket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/mainpage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/mainpage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/core/core.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/guihandler/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/guihandler/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/guihandler/mainpage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/guihandler/mainpage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/guihandler/register.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/guihandler/register.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/mainpage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/bkbocholt/ticketsystem/NaR.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/bkbocholt/ticketsystem/hello-view.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/styles/loginpage.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/styles/loginpage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/Ticket.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/Ticket.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/styles/loginpage.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/styles/registration.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/styles/registration.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/Ticket.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/view/loginpage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/loginpage.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/view/mainpage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/mainpage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-de.bkbocholt.model.UserTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-de.bkbocholt.model.UserTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/de.bkbocholt.model.UserTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/de.bkbocholt.model.UserTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/registrationPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/registrationPage.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +50,7 @@
       <list>
         <option value="FxmlFile" />
         <option value="JavaFXApplication" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -97,7 +82,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -108,26 +93,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.mainpage.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Merging main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/ewan/src/softwareTicketSystemJEFLN-Ewan/src/main/java/module-info.java",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.mainpage.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/ewan/src/softwareTicketSystemJEFLN-Ewan&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Intelj" />
@@ -159,6 +150,17 @@
       <updated>1734336439308</updated>
       <workItem from="1734336440590" duration="122000" />
       <workItem from="1738505641676" duration="13637000" />
+      <workItem from="1738661690127" duration="1530000" />
+      <workItem from="1738664380080" duration="302000" />
+      <workItem from="1738664693362" duration="3370000" />
+      <workItem from="1738713076766" duration="3510000" />
+      <workItem from="1738748285944" duration="1473000" />
+      <workItem from="1738751868243" duration="972000" />
+      <workItem from="1738834858790" duration="3479000" />
+      <workItem from="1738914966966" duration="3475000" />
+      <workItem from="1739171947610" duration="3946000" />
+      <workItem from="1739176373371" duration="753000" />
+      <workItem from="1739180352468" duration="1044000" />
     </task>
     <servers />
   </component>

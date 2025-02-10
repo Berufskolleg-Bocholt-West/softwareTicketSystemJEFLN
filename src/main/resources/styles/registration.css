@@ -18,7 +18,10 @@
     -fx-background-color: #f2f2f2;
     -fx-border-color: #ccc;
     -fx-border-width: 1;
+    -fx-min-width: 200px;
+    -fx-margin: 5px 0;
 }
+
 
 .form-field:focused {
     -fx-background-color: #ffffff;
@@ -35,15 +38,46 @@
 }
 
 .login-button:hover {
-    -fx-background-color: #45a049;
+    -fx-background-color: black;
+    -fx-cursor: hand;
 }
 
 StackPane {
-    -fx-background-color: #f4f4f4; /* Light grey background */
+    -fx-background-color: #f4f4f4;
+    -fx-alignment: CENTER;
 }
 
 VBox {
     -fx-background-color: white;
     -fx-background-radius: 10;
     -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.1) , 10, 0.5, 0 , 2 );
+    -fx-alignment: CENTER;
+
+}
+gridpane {
+    -fx-alignment: CENTER;
+    -fx-hgap: 10;
+    -fx-vgap: 10;
+}
+
+lable{
+    -fx-font-size: 16px;
+    -fx-text-fill: #333;
+    -fx-alignment: CENTER;
+}
+VBox {
+    -fx-alignment: center;
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.1) , 10, 0.5, 0 , 2 );
+}
+
+GridPane {
+    -fx-alignment: center;
+    -fx-hgap: 10;
+    -fx-vgap: 10;
+}
+
+HBox {
+    -fx-alignment: center;
 }

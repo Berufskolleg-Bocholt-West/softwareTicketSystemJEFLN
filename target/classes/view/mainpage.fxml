@@ -2,67 +2,47 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.shape.*?>
 
-<AnchorPane fx:id="rootPane" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.bkbocholt.model.guihandler.mainpage">
+<AnchorPane fx:id="rootPane" prefHeight="650.0" prefWidth="1000.0"
+            xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="de.bkbocholt.model.guihandler.mainpage" stylesheets="@../styles/mainpage.css">
+
     <children>
-        <!-- drei striche menu  -->
-        <VBox fx:id="AufmachenButton" layoutX="20.0" layoutY="20.0" spacing="5.0" style="-fx-cursor: hand;">
-            <children>
-                <Rectangle width="30.0" height="4.0" fill="#FFFFFF" />
-                <Rectangle width="30.0" height="4.0" fill="#FFFFFF" />
-                <Rectangle width="30.0" height="4.0" fill="#FFFFFF" />
-            </children>
-        </VBox>
 
-        <!-- Menue aufklappen -->
-        <VBox fx:id="menuDrawer" prefWidth="150.0" prefHeight="650.0" layoutX="-200.0" style="-fx-background-color: #222;">
-            <children>
-                <Button fx:id="MenueZUButton" text="✖" style="-fx-background-color: #FF5555; -fx-text-fill: white; -fx-font-size: 16px;"/>
-                <Button text="Ka  1" prefWidth="150.0" style="-fx-background-color: #444; -fx-text-fill: white;"/>
-                <Button text="Ka  2" prefWidth="150.0" style="-fx-background-color: #444; -fx-text-fill: white;"/>
-                <Button text="Ka  3" prefWidth="150.0" style="-fx-background-color: #444; -fx-text-fill: white;"/>
-            </children>
-        </VBox>
-
-        <!-- das Grid -->
-
-        <TableView fx:id="ticketTable" VBox.vgrow="ALWAYS" >
-            <columns>
-                <TableColumn text="Id"/>
-                <TableColumn text="Titel" />
-                <TableColumn text="Status" />
-                <TableColumn text="Priority" />
-                <TableColumn text="Assignee" />
-                <TableColumn text="Creator" />
+        <!-- Table for quick showing tickets -->
+        <TableView fx:id="ticketTable" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="300.0"
+                   AnchorPane.topAnchor="50.0" AnchorPane.bottomAnchor="50.0">
+        <columns>
+                <TableColumn fx:id="idColumn" text="Id"/>
+                <TableColumn fx:id="titleColumn" text="Titel"/>
+                <TableColumn fx:id="statusColumn" text="Status"/>
+                <TableColumn fx:id="priorityColumn" text="Priority"/>
+                <TableColumn fx:id="assigneeColumn" text="Assignee"/>
+                <TableColumn fx:id="creatorColumn" text="Creator"/>
             </columns>
         </TableView>
 
-        <!-- rechtes menu dings -->
-        <VBox layoutX="820.0" layoutY="50.0" spacing="10.0">
+        <!-- Ticket Loader -->
+        <VBox layoutX="800.0" layoutY="50.0" spacing="10.0" styleClass="vbox-container">
+
             <children>
-                <Label text="Überschrift" style="-fx-font-size: 18px; -fx-text-fill: #444;"/>
-                <TextArea fx:id="inputTitle" prefHeight="25" prefWidth="160.0" style="-fx-background-color: #F5F5F5;"/>
-                <Label text="Inhalt:" style="-fx-font-size: 14px; -fx-text-fill: #444;"/>
-                <TextArea fx:id="inputText" prefHeight="300.0" prefWidth="160.0" style="-fx-background-color: #F5F5F5;"/>
-                <Label text="Ersteller:" style="-fx-font-size: 14px; -fx-text-fill: #444;"/>
-                <Label fx:id="creatorLabel" style="-fx-font-size: 14px; -fx-text-fill: #444;"/>
+                <Label text="Title:" styleClass="label-large"/>
+                <TextArea fx:id="inputTitle" prefHeight="25" prefWidth="160.0" styleClass="input-field"/>
+                <Label text="Contents:" styleClass="label-small"/>
+                <TextArea fx:id="inputText" prefHeight="300.0" prefWidth="160.0" styleClass="input-field"/>
+                <Label text="Creator:" styleClass="label-small"/>
+                <Label fx:id="creatorLabel" styleClass="label-small"/>
+
             </children>
         </VBox>
-
-        <!-- Untere Buttons mit fixierter Position -->
-        <VBox layoutX="0" layoutY="0" prefWidth="1000.0" alignment="BOTTOM_RIGHT">
+        <!-- Buttons directly under the Ticket Loader -->
+        <HBox spacing="10.0" alignment="CENTER">
             <children>
-                <HBox spacing="10.0" alignment="CENTER_RIGHT">
-                    <children>
-                        <Button fx:id="btnSave" text="Speichern" style="-fx-background-color: #4CAF50; -fx-text-fill: white;" prefWidth="80.0" onAction="#save"/>
-                        <Button fx:id="btnLoad" text="Laden" style="-fx-background-color: #2196F3; -fx-text-fill: white;" prefWidth="80.0" />
-                        <Button fx:id="btnDelete" text="Löschen" style="-fx-background-color: #F44336; -fx-text-fill: white;" prefWidth="80.0" />
-                    </children>
-                </HBox>
+                <Button fx:id="btnSave" text="Save" styleClass="btn-save" prefWidth="80.0" onAction="#save"/>
+                <Button fx:id="btnLoad" text="Load" styleClass="btn-load" prefWidth="80.0"/>
+                <Button fx:id="btnDelete" text="Delete" styleClass="btn-delete" prefWidth="80.0"/>
             </children>
+        </HBox>
 
-            <AnchorPane.rightAnchor>10.0</AnchorPane.rightAnchor>
-        </VBox>
     </children>
 </AnchorPane>
