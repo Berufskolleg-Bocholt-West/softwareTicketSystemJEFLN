@@ -46,23 +46,5 @@ public class register {
         stage.show();
     }
 
-    @FXML
-    private void handleRegister(){
-        try {
-            String userEmail = email.getText();
-            String userPass = password.getText();
-            String reEnterPass = reEnterPassword.getText();
-            if (userPass.equals(reEnterPass)) {
-                String documentsPath = getUserSystemPath().toString();
-                Path directoryPath = Paths.get(documentsPath, "TicketProgramm/User");
-                User.saveUserToJSON(new User(userEmail, userEmail, userEmail,userPass));
-            } else {
-                System.out.println("Passwords do not match.");
-            }
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
 }
 //änder die gui so das man vor nachnamen eingeben muss

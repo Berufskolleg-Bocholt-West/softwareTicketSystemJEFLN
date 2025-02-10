@@ -10,21 +10,19 @@
     <children>
 
         <!-- Table for quick showing tickets -->
-        <TableView fx:id="ticketTable" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="300.0"
-                   AnchorPane.topAnchor="50.0" AnchorPane.bottomAnchor="50.0">
-        <columns>
-                <TableColumn fx:id="idColumn" text="Id"/>
-                <TableColumn fx:id="titleColumn" text="Titel"/>
-                <TableColumn fx:id="statusColumn" text="Status"/>
-                <TableColumn fx:id="priorityColumn" text="Priority"/>
-                <TableColumn fx:id="assigneeColumn" text="Assignee"/>
-                <TableColumn fx:id="creatorColumn" text="Creator"/>
+        <TableView fx:id="ticketTable" VBox.vgrow="ALWAYS">
+            <columns>
+                <TableColumn text="Id"/>
+                <TableColumn text="Titel"/>
+                <TableColumn text="Status"/>
+                <TableColumn text="Priority"/>
+                <TableColumn text="Assignee"/>
+                <TableColumn text="Creator"/>
             </columns>
         </TableView>
 
         <!-- Ticket Loader -->
-        <VBox layoutX="800.0" layoutY="50.0" spacing="10.0" styleClass="vbox-container">
-
+        <VBox layoutX="820.0" layoutY="50.0" spacing="10.0">
             <children>
                 <Label text="Title:" styleClass="label-large"/>
                 <TextArea fx:id="inputTitle" prefHeight="25" prefWidth="160.0" styleClass="input-field"/>
@@ -32,17 +30,22 @@
                 <TextArea fx:id="inputText" prefHeight="300.0" prefWidth="160.0" styleClass="input-field"/>
                 <Label text="Creator:" styleClass="label-small"/>
                 <Label fx:id="creatorLabel" styleClass="label-small"/>
-
             </children>
         </VBox>
-        <!-- Buttons directly under the Ticket Loader -->
-        <HBox spacing="10.0" alignment="CENTER">
+
+        <!-- Load, Delete, Save Buttons -->
+        <VBox layoutX="0" layoutY="0" prefWidth="1000.0" alignment="BOTTOM_RIGHT">
             <children>
-                <Button fx:id="btnSave" text="Save" styleClass="btn-save" prefWidth="80.0" onAction="#save"/>
-                <Button fx:id="btnLoad" text="Load" styleClass="btn-load" prefWidth="80.0"/>
-                <Button fx:id="btnDelete" text="Delete" styleClass="btn-delete" prefWidth="80.0"/>
+                <HBox spacing="10.0" alignment="CENTER_RIGHT">
+                    <children>
+                        <Button fx:id="btnSave" text="Save" styleClass="btn-save" prefWidth="80.0" onAction="#save"/>
+                        <Button fx:id="btnLoad" text="Load" styleClass="btn-load" prefWidth="80.0"/>
+                        <Button fx:id="btnDelete" text="Delete" styleClass="btn-delete" prefWidth="80.0"/>
+                    </children>
+                </HBox>
             </children>
-        </HBox>
+            <AnchorPane.rightAnchor>10.0</AnchorPane.rightAnchor>
+        </VBox>
 
     </children>
 </AnchorPane>

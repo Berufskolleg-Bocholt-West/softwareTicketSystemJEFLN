@@ -27,7 +27,7 @@ public class Main extends Application{
     @Override
     public void start(Stage primaryStage) throws Exception {
         // loads the fxml file
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/mainpage.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/loginpage.fxml"));
         Parent root = loader.load();
 
         // create a new scene and open it
