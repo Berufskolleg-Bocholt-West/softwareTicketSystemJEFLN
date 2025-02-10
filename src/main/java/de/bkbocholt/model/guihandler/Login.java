@@ -41,15 +41,20 @@ public class Login {
         String documentsPath = getUserSystemPath().toString();
         Path directoryPath = Paths.get(documentsPath, "TicketProgramm/User");
         String userPass = core.getJsonString(directoryPath, userEmail + ".json", "password");
-        System.out.println(userPass);
         String hashedPass = hashPassword(password.getText());
-        System.out.println(hashedPass);
         if (password == null) {
             System.out.println("Password field is empty.");
         }
         if (checkPassword(userPass, hashedPass)) {
             core.userID = core.getJsonInt(directoryPath, userEmail + ".json", "userID");
             core.userEmailAddress = userEmail;
+            FXMLLoader loader = new FXMLLoader(Login.class.getResource("/view/mainpage.fxml"));
+            Parent root = loader.load();
+
+            // Erhalte die aktuelle Stage (Fenster)
+            Stage stage = (Stage) ((Node) btnLogin).getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.show();
         } else {
             System.out.println("Login failed");
         }
