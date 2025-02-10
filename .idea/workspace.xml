@@ -6,39 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f8b04d6a-3695-49cd-9926-25a2d2afab3e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/Login.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/core/core.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/guihandler/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/guihandler/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/guihandler/mainpage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/guihandler/mainpage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/guihandler/register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/guihandler/register.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/mainpage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/bkbocholt/ticketsystem/NaR.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/de/bkbocholt/ticketsystem/hello-view.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/styles/loginpage.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/styles/registration.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/styles/registration.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Ticket.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/loginpage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/loginpage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/mainpage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/mainpage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/registrationPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/registrationPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/tets.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/Login.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/core/core.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/guihandler/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/guihandler/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/guihandler/mainpage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/guihandler/mainpage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/guihandler/register.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/guihandler/register.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/mainpage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/bkbocholt/ticketsystem/NaR.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/bkbocholt/ticketsystem/hello-view.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/styles/loginpage.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/styles/registration.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/styles/registration.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/Ticket.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/loginpage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/loginpage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/mainpage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/mainpage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/registrationPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/registrationPage.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +127,7 @@
       <workItem from="1738914966966" duration="3475000" />
       <workItem from="1739171947610" duration="3946000" />
       <workItem from="1739176373371" duration="753000" />
-      <workItem from="1739180352468" duration="1044000" />
+      <workItem from="1739180352468" duration="1903000" />
     </task>
     <servers />
   </component>
