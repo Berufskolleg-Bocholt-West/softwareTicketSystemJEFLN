@@ -14,8 +14,8 @@
         <PasswordField fx:id="password" promptText="Enter your password" styleClass="form-field" GridPane.columnIndex="1" GridPane.rowIndex="1" />
 
         <HBox alignment="CENTER" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="3">
-            <Button fx:id="btnLogin" styleClass="login-button" text=" Login " onAction="#handleLogin"/>
             <Button fx:id="btnRegister" text="Register" styleClass="login-button" onAction="#registerOnClick"/>
+            <Button fx:id="btnLogin" styleClass="login-button" text=" Login " onAction="#handleLogin"/>
         </HBox>
 
         <columnConstraints>
