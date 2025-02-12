@@ -64,7 +64,7 @@ public class Login {
     }
 }
 
-    // Generiert einen neuen AES-Schlüssel
+
 
     private static Boolean checkPassword(String password, String hashedPassword) throws NoSuchAlgorithmException {
         if(password.equals(hashedPassword)) {
