@@ -111,6 +111,14 @@ public class Ticket {
         }
     }
 
+    public void deleteTicket(String filePath, String fileName) {
+        File file = new File(filePath + "/" + fileName + ".Json");
+        if (file.delete()) {
+            System.out.println("Ticket erfolgreich gelöscht: " + filePath);
+        } else {
+            System.out.println("Fehler beim Löschen des Tickets: " + file);
+        }
+    }
 
     public static JSONObject getTicketData(String filePath) {
         File file = new File(filePath);

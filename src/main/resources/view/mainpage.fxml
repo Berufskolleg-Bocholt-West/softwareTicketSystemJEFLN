@@ -38,7 +38,7 @@
                     <children>
                         <Button fx:id="btnSave" text="Save" styleClass="btn-save" prefWidth="80.0" onAction="#save"/>
                         <Button fx:id="btnLoad" text="Load" styleClass="btn-load" prefWidth="80.0"/>
-                        <Button fx:id="btnDelete" text="Delete" styleClass="btn-delete" prefWidth="80.0"/>
+                        <Button fx:id="btnDelete" text="Delete" styleClass="btn-delete" prefWidth="80.0" onAction="#delete"/>
                     </children>
                 </HBox>
 

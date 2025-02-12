@@ -6,6 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="f8b04d6a-3695-49cd-9926-25a2d2afab3e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/coresys/core.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/coresys/core.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/guihandler/mainpage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/guihandler/mainpage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/mainpage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/mainpage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/guihandler/mainpage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/guihandler/mainpage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/mainpage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/mainpage.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +55,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -128,6 +134,8 @@
       <workItem from="1739171947610" duration="3946000" />
       <workItem from="1739176373371" duration="753000" />
       <workItem from="1739180352468" duration="1903000" />
+      <workItem from="1739184948845" duration="383000" />
+      <workItem from="1739185710030" duration="4794000" />
     </task>
     <servers />
   </component>

@@ -26,4 +26,10 @@ public class mainpage extends Application {
         Ticket ticket = new Ticket(1, title, inputText.getText(), core.userEmailAddress, core.userEmailAddress, 1, 1, null, null, null, null);
         ticket.saveTicket(getDirectory("Ticket"), ticket, title);
     }
+
+    public void delete() {
+        String title = inputTitle.getText();
+        Ticket ticket = new Ticket(1, title, inputText.getText(), core.userEmailAddress, core.userEmailAddress, 1, 1, null, null, null, null);
+        ticket.deleteTicket(getDirectory("Ticket"), title);
+    }
 }

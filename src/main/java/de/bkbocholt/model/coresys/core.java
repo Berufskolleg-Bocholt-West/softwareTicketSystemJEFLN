@@ -1,5 +1,6 @@
 package de.bkbocholt.model.coresys;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import de.bkbocholt.model.Ticket;
 import de.bkbocholt.model.User;
 import org.json.JSONObject;
 
@@ -10,6 +11,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
@@ -54,8 +56,8 @@ public class core {
 
     public static String getJsonString(Path fileLocation,String fileName, String varName) throws IOException {
         try {
-            String fileLocationSring = fileLocation.toString();
-            String jsonContent = new String(Files.readAllBytes(Paths.get(fileLocationSring + "/" + fileName)));
+            String fileLocationString = fileLocation.toString();
+            String jsonContent = new String(Files.readAllBytes(Paths.get(fileLocationString + "/" + fileName)));
             JSONObject json = new JSONObject(jsonContent);
             if (json.has(varName)) {
                 return json.getString(varName); // sucht nach einer bestimmten variable die einen string beinhaltet und gibt den drinstehenden wert zurück
@@ -69,13 +71,10 @@ public class core {
             return null;
         }
     }
-
-
-
     public static int getJsonInt(Path fileLocation,String fileName, String varName) throws IOException {
         try{
-            String fileLocationSring = fileLocation.toString();
-            String jsonContent = new String(Files.readAllBytes(Paths.get(fileLocationSring + "/" + fileName)));
+            String fileLocationString = fileLocation.toString();
+            String jsonContent = new String(Files.readAllBytes(Paths.get(fileLocationString + "/" + fileName)));
             JSONObject json = new JSONObject(jsonContent);
             if (json.has(varName)) {
                 return json.getInt(varName);
@@ -106,6 +105,7 @@ public class core {
             directory.mkdirs();
         }
     }
+
     public static void checkForAllDirectory() throws IOException {
         String documentsPath = User.getUserSystemPath().toString();
         Path ticketProgramPath = Paths.get(documentsPath, "TicketProgramm");
@@ -144,5 +144,16 @@ public class core {
             return historyDirectory.toString();
         }
     return null;
+    }
+
+    public static void initializeTicket(){
+        try{
+            String directory = getDirectory("Ticket");
+            ArrayList<String> ticketList = new ArrayList<>();
+
+        }catch(Exception e){
+            System.out.println("Error in initializing Ticket: " + e.getMessage());
+        }
+
     }
 }
