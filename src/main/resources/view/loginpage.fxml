@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER"  stylesheets="@../styles/registration.css" layoutX="0.0" layoutY="0.0" prefHeight="400.0" prefWidth="600.0" spacing="20" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.bkbocholt.model.guihandler.Login">
+    <Label styleClass="title-label" text="Login" />
+
+    <GridPane alignment="CENTER">
+        <Label styleClass="form-label" text="Email" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <TextField fx:id="email" promptText="Enter your email" styleClass="form-field" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+        <Label styleClass="form-label" text="Password" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <PasswordField fx:id="password" promptText="Enter your password" styleClass="form-field" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+        <HBox alignment="CENTER" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <Button fx:id="btnRegister" text="Register" styleClass="login-button" onAction="#registerOnClick"/>
+            <Button fx:id="btnLogin" styleClass="login-button" text=" Login " onAction="#handleLogin"/>
+        </HBox>
+
+        <columnConstraints>
+            <ColumnConstraints halignment="CENTER" />
+            <ColumnConstraints halignment="CENTER" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+        </rowConstraints>
+    </GridPane>
+</VBox>
