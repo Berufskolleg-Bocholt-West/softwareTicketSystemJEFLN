@@ -1,6 +1,7 @@
 package de.bkbocholt.model.guihandler;
 
 import de.bkbocholt.model.User;
+import de.bkbocholt.model.coresys.core;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -14,6 +15,7 @@ import javafx.stage.Stage;
 
 
 import java.io.IOException;
+import java.security.NoSuchAlgorithmException;
 
 import static de.bkbocholt.model.User.*;
 
@@ -72,7 +74,7 @@ public class register {
     }
 
     @FXML
-    private void handleRegister() throws IOException {
+    private void handleRegister() throws IOException, NoSuchAlgorithmException {
         String userFirstName = firstName.getText();
         String userLastName = lastName.getText();
         String userEmail = email.getText();
@@ -128,8 +130,7 @@ public class register {
         }
 
         if (Empty == 0 && match == 0 && flength == 0 && llength == 0 && emailcheck == 0 && paswdlength == 0) {
-            System.out.println(userFirstName + " " + userLastName + " " + userEmail + " " + userPassword);
-            saveUserToJSON(new User(userFirstName, userLastName, userEmail, userPassword));
+            saveUserToJSON(new User(userFirstName, userLastName, userEmail, core.hashPassword(userPassword)));
             showAlert(AlertType.INFORMATION, "Registration Successful", "Registration Successful.");
         }
     }
