@@ -201,7 +201,7 @@
       <workItem from="1739356821323" duration="866000" />
       <workItem from="1739357850660" duration="3347000" />
       <workItem from="1739532798956" duration="73000" />
-      <workItem from="1739956772926" duration="1187000" />
+      <workItem from="1739956772926" duration="1238000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -243,7 +243,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739957804494</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Angefügt Loader für Ticket Comment und User im SysHandler">
+      <option name="closed" value="true" />
+      <created>1739958010687</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1739958010687</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
