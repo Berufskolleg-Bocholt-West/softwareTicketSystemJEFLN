@@ -1,4 +1,4 @@
-package de.bkbocholt.model.core;
+package de.bkbocholt.model.coresys;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import de.bkbocholt.model.User;
 import org.json.JSONObject;
@@ -70,8 +70,6 @@ public class core {
         }
     }
 
-
-
     public static int getJsonInt(Path fileLocation,String fileName, String varName) throws IOException {
         try{
             String fileLocationSring = fileLocation.toString();
@@ -106,7 +104,7 @@ public class core {
             directory.mkdirs();
         }
     }
-    public static void checkForAllDirectory(){
+    public static void checkForAllDirectory() throws IOException {
         String documentsPath = User.getUserSystemPath().toString();
         Path ticketProgramPath = Paths.get(documentsPath, "TicketProgramm");
         Path userDirectory = Paths.get(ticketProgramPath.toString(), "User");
@@ -114,7 +112,7 @@ public class core {
         Path commentDirectory = Paths.get(ticketProgramPath.toString(), "Comment");
         Path attachmentDirectory = Paths.get(ticketProgramPath.toString(), "Attachment");
         Path historyDirectory = Paths.get(ticketProgramPath.toString(), "History");
-        Path configFilePath = ticketProgramPath.resolve("config.conf");
+        checkForConfig();
 
         isDirectoryMissing(ticketProgramPath.toFile());
         isDirectoryMissing(userDirectory.toFile());
@@ -122,8 +120,8 @@ public class core {
         isDirectoryMissing(commentDirectory.toFile());
         isDirectoryMissing(attachmentDirectory.toFile());
         isDirectoryMissing(historyDirectory.toFile());
-        isDirectoryMissing(configFilePath.toFile());
     }
+    
     public static String getDirectory(String usage) {
         String documentsPath = User.getUserSystemPath().toString();
         Path ticketProgramPath = Paths.get(documentsPath, "TicketProgramm");
@@ -131,8 +129,7 @@ public class core {
             Path ticketDirectory = Paths.get(ticketProgramPath.toString(), "Ticket");
             System.out.println(ticketDirectory.toString());
             return ticketDirectory.toString();
-    }
+        }
         return null;
-}
-
+    }
 }

@@ -12,10 +12,7 @@
 
 package de.bkbocholt.model;
 
-import java.nio.file.Path;
-import java.util.Date;
 import java.util.ArrayList;
-import java.util.HashMap;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.File;
@@ -23,19 +20,13 @@ import java.io.IOException;
 
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.Scanner;
 
-import com.fasterxml.jackson.databind.util.JSONPObject;
-import de.bkbocholt.model.core.core;
 import javafx.fxml.FXML;
 
 import org.json.JSONObject;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.scene.control.TableView;
-
-import static de.bkbocholt.model.core.core.isDirectoryMissing;
 
 public class Ticket {
     @FXML

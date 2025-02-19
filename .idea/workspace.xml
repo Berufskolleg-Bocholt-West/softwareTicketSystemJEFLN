@@ -5,9 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8b04d6a-3695-49cd-9926-25a2d2afab3e" name="Changes" comment="test">
-      <change beforePath="$PROJECT_DIR$/Ticketsystem/src/main/java/de/bkbocholt/model/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ticketsystem/src/main/java/de/bkbocholt/model/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ticketsystem/src/main/java/de/bkbocholt/model/core.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ticketsystem/src/main/java/de/bkbocholt/model/core/core.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ticketsystem/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ticketsystem/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/coresys/systemHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/core/core.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/coresys/core.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/mainpage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bkbocholt/model/mainpage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/Ticket.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/Ticket.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/mainpage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bkbocholt/model/mainpage.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,12 +87,14 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.java.de.bkbocholt.model.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.mainpage.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.UserTest.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Janosch&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;janoschHaupt&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -101,11 +118,26 @@
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-23" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="de.bkbocholt.model.Main" />
       <module name="Ticketsystem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="de.bkbocholt.model.core.*" />
+          <option name="PATTERN" value="de.bkbocholt.model.coresys.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mainpage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="de.bkbocholt.model.mainpage" />
+      <module name="Ticketsystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.bkbocholt.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,7 +149,7 @@
       <module name="Ticketsystem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="de.bkbocholt.model.core.*" />
+          <option name="PATTERN" value="de.bkbocholt.model.coresys.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,8 +174,14 @@
       <option name="filePath" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.mainpage" />
+      <item itemvalue="JUnit.UserTest" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.mainpage" />
         <item itemvalue="JUnit.UserTest" />
       </list>
     </recent_temporary>
@@ -151,8 +189,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.153" />
-        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.153" />
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.189" />
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.189" />
       </set>
     </attachedChunks>
   </component>
@@ -172,6 +210,14 @@
       <workItem from="1737544043256" duration="176000" />
       <workItem from="1737544442927" duration="359000" />
       <workItem from="1738148188915" duration="889000" />
+      <workItem from="1738569828466" duration="1519000" />
+      <workItem from="1738572832075" duration="16000" />
+      <workItem from="1738602641405" duration="1723000" />
+      <workItem from="1738752326941" duration="834000" />
+      <workItem from="1739356821323" duration="866000" />
+      <workItem from="1739357850660" duration="3347000" />
+      <workItem from="1739532798956" duration="73000" />
+      <workItem from="1739956772926" duration="844000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -206,7 +252,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="Janosch" />
+                        <option value="origin/Janosch" />
                       </list>
                     </value>
                   </entry>
@@ -222,6 +268,16 @@
     <MESSAGE value="Merge pull request #5 from Berufskolleg-Bocholt-West/Niels&#10;&#10;base files" />
     <MESSAGE value="test" />
     <option name="LAST_COMMIT_MESSAGE" value="test" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.io.FileNotFoundException" package="java.io" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

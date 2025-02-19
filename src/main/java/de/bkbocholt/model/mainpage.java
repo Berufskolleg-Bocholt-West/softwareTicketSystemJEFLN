@@ -1,14 +1,12 @@
 package de.bkbocholt.model;
 
-import de.bkbocholt.model.core.core;
+import de.bkbocholt.model.coresys.core;
 import javafx.application.Application;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-import static de.bkbocholt.model.core.core.getDirectory;
+import static de.bkbocholt.model.coresys.core.getDirectory;
 
 public class mainpage extends Application {
 

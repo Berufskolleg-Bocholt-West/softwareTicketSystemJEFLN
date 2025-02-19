@@ -12,20 +12,17 @@
 package de.bkbocholt.model;
 
 import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.security.NoSuchAlgorithmException;
-import java.util.ArrayList;
-import java.util.Date;
+
+import de.bkbocholt.model.coresys.core;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import java.util.Scanner;
 
 //eigene klassen/methoden
-import static de.bkbocholt.model.core.core.*;
+import static de.bkbocholt.model.coresys.core.*;
 
 
 public class Main extends Application{

@@ -1,6 +1,6 @@
 package de.bkbocholt.model;
 
-import de.bkbocholt.model.core.core;
+import de.bkbocholt.model.coresys.core;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -11,16 +11,12 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
-import javax.crypto.*;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.security.NoSuchAlgorithmException;
-import java.util.Base64;
-import java.security.MessageDigest;
-import java.util.EventObject;
 
 import static de.bkbocholt.model.User.getUserSystemPath;
-import static de.bkbocholt.model.core.core.hashPassword;
+import static de.bkbocholt.model.coresys.core.hashPassword;
 
 
 public class Login {
