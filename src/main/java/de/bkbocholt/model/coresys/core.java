@@ -1,4 +1,5 @@
 package de.bkbocholt.model.coresys;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 import de.bkbocholt.model.User;
 import org.json.JSONObject;
@@ -10,9 +11,9 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Objects;
 
 public class core {
     public static int userID;
@@ -54,8 +55,8 @@ public class core {
 
     public static String getJsonString(Path fileLocation,String fileName, String varName) throws IOException {
         try {
-            String fileLocationSring = fileLocation.toString();
-            String jsonContent = new String(Files.readAllBytes(Paths.get(fileLocationSring + "/" + fileName)));
+            String fileLocationString = fileLocation.toString();
+            String jsonContent = new String(Files.readAllBytes(Paths.get(fileLocationString + "/" + fileName)));
             JSONObject json = new JSONObject(jsonContent);
             if (json.has(varName)) {
                 return json.getString(varName); // sucht nach einer bestimmten variable die einen string beinhaltet und gibt den drinstehenden wert zurück
@@ -69,11 +70,10 @@ public class core {
             return null;
         }
     }
-
     public static int getJsonInt(Path fileLocation,String fileName, String varName) throws IOException {
         try{
-            String fileLocationSring = fileLocation.toString();
-            String jsonContent = new String(Files.readAllBytes(Paths.get(fileLocationSring + "/" + fileName)));
+            String fileLocationString = fileLocation.toString();
+            String jsonContent = new String(Files.readAllBytes(Paths.get(fileLocationString + "/" + fileName)));
             JSONObject json = new JSONObject(jsonContent);
             if (json.has(varName)) {
                 return json.getInt(varName);
@@ -104,6 +104,7 @@ public class core {
             directory.mkdirs();
         }
     }
+
     public static void checkForAllDirectory() throws IOException {
         String documentsPath = User.getUserSystemPath().toString();
         Path ticketProgramPath = Paths.get(documentsPath, "TicketProgramm");
@@ -112,7 +113,7 @@ public class core {
         Path commentDirectory = Paths.get(ticketProgramPath.toString(), "Comment");
         Path attachmentDirectory = Paths.get(ticketProgramPath.toString(), "Attachment");
         Path historyDirectory = Paths.get(ticketProgramPath.toString(), "History");
-        checkForConfig();
+        Path loggPath = Paths.get(ticketProgramPath.toString(), "Logg");
 
         isDirectoryMissing(ticketProgramPath.toFile());
         isDirectoryMissing(userDirectory.toFile());
@@ -120,16 +121,33 @@ public class core {
         isDirectoryMissing(commentDirectory.toFile());
         isDirectoryMissing(attachmentDirectory.toFile());
         isDirectoryMissing(historyDirectory.toFile());
+        isDirectoryMissing(loggPath.toFile());
+        checkForConfig();
     }
-    
     public static String getDirectory(String usage) {
         String documentsPath = User.getUserSystemPath().toString();
         Path ticketProgramPath = Paths.get(documentsPath, "TicketProgramm");
-        if(Objects.equals(usage, "Ticket")){
-            Path ticketDirectory = Paths.get(ticketProgramPath.toString(), "Ticket");
-            System.out.println(ticketDirectory.toString());
-            return ticketDirectory.toString();
+        switch (usage){
+            case "Ticket":
+                Path ticketDirectory = Paths.get(ticketProgramPath.toString(), "Ticket");
+                return ticketDirectory.toString();
+            case "User":
+                Path userDirectory = Paths.get(ticketProgramPath.toString(), "User");
+                return userDirectory.toString();
+            case "comment":
+                Path commentDirectory = Paths.get(ticketProgramPath.toString(), "Comment");
+                return commentDirectory.toString();
+            case "attachment":
+                Path attachmentDirectory = Paths.get(ticketProgramPath.toString(), "Attachment");
+                return attachmentDirectory.toString();
+            case "history":
+                Path historyDirectory = Paths.get(ticketProgramPath.toString(), "History");
+                return historyDirectory.toString();
+            case "logger":
+                Path loggPath = Paths.get(ticketProgramPath.toString(), "Logg");
+                return loggPath.toString();
         }
-        return null;
+    return null;
     }
+
 }

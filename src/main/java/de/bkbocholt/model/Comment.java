@@ -34,10 +34,9 @@ public class Comment {
         this.history.add(comment);
     }
 
-    public Comment addComment(String content, String createdBy){
+    public Comment addComment(Ticket ticket, String content, String createdBy){
         Comment comment = new Comment(this.history.size() + 1, createdBy, content, new Date(), new Date(), true);
         this.history.add(comment);
         return comment;
     }
-
 }

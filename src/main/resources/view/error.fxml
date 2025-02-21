@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox stylesheets="@../styles/error.css" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="de.bkbocholt.model.errorhandler"
+      prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f4f4f9; -fx-padding: 20px;">
+    <GridPane alignment="CENTER" hgap="15" vgap="10">
+        <Label fx:id="errorTitle" GridPane.columnIndex="0" GridPane.rowIndex="0" text="Ooops... Something went wrong!"
+               styleClass="error-title"/>
+        <Label fx:id="errorLabel"  GridPane.columnIndex="0" GridPane.rowIndex="1" styleClass="error-message"/>
+        <Button fx:id="btnConfirm" styleClass="btn-confirm" text="Confirm" GridPane.columnIndex="0" GridPane.rowIndex="2" onAction="#onClick"/>
+    </GridPane>
+</VBox>

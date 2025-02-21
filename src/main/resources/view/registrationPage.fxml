@@ -3,44 +3,44 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../styles/registration.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.bkbocholt.model.guihandler.register">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../styles/register.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.bkbocholt.model.guihandler.register">
 
     <StackPane />
-     <VBox alignment="CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="400.0" prefWidth="600.0" spacing="20">
-         <!-- Title with improved styling -->
-         <Label styleClass="title-label" text="Register" />
+    <VBox alignment="CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="400.0" prefWidth="600.0" spacing="20">
+        <!-- Title with improved styling -->
+        <Label styleClass="title-label" text="Register" />
 
-         <!-- Login form with GridPane -->
-         <GridPane alignment="CENTER" hgap="15" vgap="10">
-             <Label styleClass="form-label" text="Firstname" GridPane.columnIndex="0" GridPane.rowIndex="0" />
-             <TextField fx:id="firstName" promptText="Enter your First Name" styleClass="form-field" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <!-- Login form with GridPane -->
+        <GridPane alignment="CENTER" hgap="15" vgap="10">
+            <Label styleClass="form-label" text="Firstname" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <TextField fx:id="firstName" promptText="Enter your Firstname" styleClass="form-field" GridPane.columnIndex="1" GridPane.rowIndex="0" />
 
-             <Label styleClass="form-label" text="Lastname" GridPane.columnIndex="0" GridPane.rowIndex="1" />
-             <TextField fx:id="lastName" promptText="Enter your Last Name" styleClass="form-field" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label styleClass="form-label" text="Lastname" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <TextField fx:id="lastName" promptText="Enter your Lastname" styleClass="form-field" GridPane.columnIndex="1" GridPane.rowIndex="1" />
 
-             <Label styleClass="form-label" text="Email" GridPane.columnIndex="0" GridPane.rowIndex="2" />
-             <TextField fx:id="email" promptText="Enter your email" styleClass="form-field" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label styleClass="form-label" text="E-mail" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <TextField fx:id="email" promptText="Enter your E-mail" styleClass="form-field" GridPane.columnIndex="1" GridPane.rowIndex="2" />
 
-             <Label styleClass="form-label" text="Password" GridPane.columnIndex="0" GridPane.rowIndex="3" />
-             <PasswordField fx:id="password" promptText="Enter your password" styleClass="form-field" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label styleClass="form-label" text="Password" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+            <PasswordField fx:id="password" promptText="Enter your password" styleClass="form-field" GridPane.columnIndex="1" GridPane.rowIndex="3" />
 
-             <Label styleClass="form-label" text="Re-enter Password" GridPane.columnIndex="0" GridPane.rowIndex="4" />
-             <PasswordField fx:id="reEnter" promptText="Re-enter your password" styleClass="form-field" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label styleClass="form-label" text="Re-enter Password" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+            <PasswordField fx:id="reEnter" promptText="Re-enter your password" styleClass="form-field" GridPane.columnIndex="1" GridPane.rowIndex="4" />
 
-             <HBox alignment="CENTER" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="5">
-                 <Button fx:id="btnLogin" styleClass="login-button" text=" Login " onAction="#loginOnClick"/>
-                 <Button fx:id="btnRegister" text="Register" styleClass="login-button" onAction="#handleRegister"/>
-             </HBox>
-         <columnConstraints>
-            <ColumnConstraints />
-            <ColumnConstraints />
-         </columnConstraints>
-         <rowConstraints>
-            <RowConstraints />
-            <RowConstraints />
-            <RowConstraints />
-            <RowConstraints />
-         </rowConstraints>
-         </GridPane>
-     </VBox>
+            <HBox alignment="CENTER" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                <Button fx:id="btnLogin" styleClass="login-button" text=" Login " onAction="#loginOnClick"/>
+                <Button fx:id="btnRegister" text="Register" styleClass="login-button" onAction="#handleRegister"/>
+            </HBox>
+            <columnConstraints>
+                <ColumnConstraints />
+                <ColumnConstraints />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+            </rowConstraints>
+        </GridPane>
+    </VBox>
 </AnchorPane>

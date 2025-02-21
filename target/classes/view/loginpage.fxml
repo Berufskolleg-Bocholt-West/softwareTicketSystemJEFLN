@@ -3,7 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="CENTER"  stylesheets="@../styles/registration.css" layoutX="0.0" layoutY="0.0" prefHeight="400.0" prefWidth="600.0" spacing="20" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.bkbocholt.model.guihandler.Login">
+<VBox alignment="CENTER" stylesheets="@../styles/register.css" layoutX="0.0" layoutY="0.0" prefHeight="400.0" prefWidth="600.0" spacing="20" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.bkbocholt.model.guihandler.Login">
     <Label styleClass="title-label" text="Login" />
 
     <GridPane alignment="CENTER">

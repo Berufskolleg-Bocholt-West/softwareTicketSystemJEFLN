@@ -8,7 +8,8 @@ module de.bkbocholt.ticketsystem {
 
     requires json;
     requires java.desktop;
-
+    requires java.logging;
+    requires com.google.gson;
 
     opens de.bkbocholt.model to javafx.fxml;
     opens view to javafx.fxml; // Öffne das Paket, in dem die FXML-Datei liegt

@@ -1,0 +1,42 @@
+/* Button Styling */
+.btn-confirm {
+    -fx-background-color: #f44336; /* Red color */
+    -fx-text-fill: white;
+    -fx-border-radius: 5px;
+    -fx-font-size: 14px;
+    -fx-padding: 12px 20px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, #000000, 3, 0.5, 0, 2);
+}
+
+.btn-confirm:hover {
+    -fx-background-color: #d32f2f;
+}
+
+/* Title Styling */
+.error-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #d32f2f; /* Dark Red */
+    -fx-alignment: center;
+    -fx-padding: 0 0 10px 0;
+}
+
+/* Error Message Styling */
+.error-message {
+    -fx-font-size: 16px;
+    -fx-text-fill: #555555;
+    -fx-alignment: center;
+    -fx-padding: 0 0 20px 0;
+}
+
+/* VBox Styling */
+VBox {
+    -fx-alignment: center;
+    -fx-spacing: 20px;
+}
+
+/* GridPane Styling */
+GridPane {
+    -fx-alignment: center;
+}
