@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="Settings" prefHeight="650.0" prefWidth="1000.0" stylesheets="@../styles/mainpage.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.bkbocholt.model.guihandler.Settings">
+   <children>
+
+       <VBox layoutX="50" layoutY="50" spacing="10" styleClass="vbox-container">
+
+           <children>
+               <Label text="Settings" layoutX="5" layoutY="5" styleClass="label-large"/>
+           </children>
+
+       </VBox>
+
+   </children>
+</AnchorPane>
